@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: #9e948f;
+    color: #fff;   
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.705)),url(images/img2.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: rgb(15, 13, 13);
+    color: black;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.lang{
+    display: inline-flex;
+    background: transparent;
+    color: white;
+    align-items: center;
+    border: 1px solid white;
+    margin-left: 1000px;
+}
+.down{
+    width: 15px;
+    margin-left: 10px;
+}
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* spacing between buttons */
+  }
+
+ #contact-info,
+#download-resume {
+  background-color: black; /* you can use different bg for each if you want */
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  border: none;
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+#contact-info:hover,
+#download-resume:hover {
+  opacity: 0.8;
+}
+
+#contact-info:active,
+#download-resume:active {
+  opacity: 0.6;
+  transform: scale(0.96);
+}
+
+  
+  #contact-info {
+    background-color: rgb(35, 31, 31);
+    color: white;
+  }
+  #download-resume {
+    background-color: rgb(35, 31, 31); /* or white, depending on your design */
+    color: white;
+    text-decoration: none;  /* remove underline */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    transition: 0.3s ease;
+  }
+  a{
+    color:rgb(62, 55, 55);
+    text-decoration: solid;
+  }
+  #download-resume:hover {
+    background-color: #5c0000;  /* darken on hover */
+  }
+  .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn--pink {
+  background-color: #42373b;
+  color: #ffffff;
+  border-color: #ff4081;
+}
+
+.btn--pink:hover {
+  background-color: #221e1e;
+  color: #ff4081;
+  border-color: #940434cb;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 64, 129, 0.4);
+}
+
+  
+  .hello{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  
+.headercont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.headercont h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.headercont h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4.2rem;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid  var(--pink);
+    font-weight: 400;
+}
+.btn--pink {
+    background: var(--pink);
+    transition: all 0.2s;
+}
+
+.btn--pink::after {
+    display: none;
+}
+
+.btn--pink:hover,
+.btn--pink:focus {
+    background: transparent;
+}
+.btn--pink:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(58, 54, 54, 0.025); /* soft glow */
+}
+.btn--pink:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.btn--pink {
+  background-color: #232020;
+  color: #c0afaf;
+}
+
+.btn--pink:hover {
+  background-color: #864242;
+  color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(240, 237, 238, 0.4);
+}
+
+.btn--pink:active {
+  transform: scale(0.97);
+}
+
+/* ✨ Remove focus ring */
+.btn--pink:focus {
+  outline: none;
+}
+
+.btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    background: var(--white);
+    height: 100%;
+    z-index: -1;
+    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+.email input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    font-size: 26px;
+}
+.email button{
+    background: rgb(245, 241, 241);
+    color: rgb(12, 12, 12);
+    border: 15px;
+    outline: 0;
+    font-size: 22px;
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.bg{
+    background: rgb(20, 19, 19);
+}
+.feature{
+    padding: 50px 12%;
+    font-size: 22px;
+    border-top: 6px solid #6c6868;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: #3b3838cb;
+}
+.text-col h2 {
+  color: #373434; 
+  font-size: 30px;
+}
+
+
+
+.img-col{
+    flex-basis: 46%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.feature h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.faq{
+    text-align: center;
+    padding: 10px 12%;
+    color: #000;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #f6f1f1;
+    font-weight: 500;
+    background: #493e3e;
+margin-bottom: 2px;
+cursor: pointer;
+position:relative ;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background-color: antiquewhite;
+    color: #140202;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+.accordion input[type="radio"]:checked+ label+ .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked+ label::after{
+    transform: rotate(135deg);
+    transition: 0.5s;
+}
+.faq .email{
+    max-width: 600px;
+    margin: 20px auto 60px;
+    font-size: 10px;
+    color: #161111;
+}
+.faq small{
+    font-size: 18px;
+    color: #331a22cb;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #060606;
+    color: #d2caca;
+    background-color: #393232;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #c0b3b3;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer h2 a{
+    color: #c8bbbb;
+}
